@@ -4,13 +4,16 @@ import HouseDetailView from "../views/HouseDetailView.vue"
 import PersonsView from "../views/PersonsView.vue"
 import PersonDetailView from "../views/PersonDetailView.vue"
 import QuotesView from "../views/QuotesView.vue"
+import MainView from "../views/MainView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      redirect: { path: "/houses" },
+      name: "main",
+      component: MainView,
+      // redirect: { path: "/houses" },
     },
     {
       path: "/houses",

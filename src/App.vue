@@ -5,8 +5,9 @@ import NavMain from "./components/NavMain.vue"
 
 <template>
   <NavMain />
-
-  <RouterView />
+  <Suspense>
+    <RouterView />
+  </Suspense>
 </template>
 
 <style scoped></style>
